@@ -8,6 +8,11 @@
 
 /*-------------scrollbar-----------*/
 
+::selection{
+  background: #4f555c;
+  color: #fff;
+}
+
 body::-webkit-scrollbar{
     width: 20px;
 }
