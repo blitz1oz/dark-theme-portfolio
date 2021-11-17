@@ -7,12 +7,14 @@
 }
 
 /*-------------scrollbar-----------*/
+a{
+  cursor: url(img/portfolio-cursor-white.png) 25 25, auto;
+}
 
 ::selection{
   background: #4f555c;
   color: #fff;
 }
-
 body::-webkit-scrollbar{
     width: 20px;
 }
@@ -39,6 +41,8 @@ html{
 }
 body{
   background: #18191A;
+  height: 100vh;
+  cursor: url(img/portfolio-cursor-white2.png) 25 25, auto;
 }
 :root {
   font-size: 16px;
@@ -61,6 +65,7 @@ body{
   background-color: #32353b;
   transition: width 600ms ease;
   box-shadow: 0px 0px 5px 3px #0e0e0e;
+  z-index: 1000;
 }
 
 .navbar-nav {
@@ -192,6 +197,9 @@ body{
     margin-top: 0;
     width: 100vw;
     height: 5rem;
+  }
+  .thumbnails{
+    padding-top: 20px;
   }
 
   .logo {
@@ -353,7 +361,7 @@ body{
   padding-top: 5%;
   padding-left: 235px;
   padding-right: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   display: grid;
   grid-gap: 50px 90px;
   grid-template-columns: repeat(3, 1fr);
@@ -362,14 +370,11 @@ body{
   background-color: #32353b;
   padding: 0px;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px 3px #0e0e0e;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.801);
   transition: all 0.3s;
 }
 .col:hover{
   transform: translateY(-3px);
-}
-.col img:hover{
-  cursor: pointer;
 }
 .text{
   padding: 10px;
@@ -443,7 +448,6 @@ body{
 }
 .card-link-binance:hover::after{
   width: 100%;
-  cursor: pointer;
   animation: yellow-line 1s ease-in-out 1;
 }
 @keyframes yellow-line{
@@ -487,7 +491,6 @@ body{
 }
 .card-link-formula1:hover::after{
   width: 100%;
-  cursor: pointer;
   animation: red-line 1s ease-in-out 1;
 }
 @keyframes red-line{
@@ -524,7 +527,6 @@ body{
 }
 .card-info-illustrator:hover::after{
   width: 100%;
-  cursor: pointer;
   animation: brown-line 1s ease-in-out 1;
 }
 @keyframes brown-line{
@@ -557,7 +559,6 @@ body{
 }
 .card-info-photoshop:hover::after{
   width: 100%;
-  cursor: pointer;
   animation: blue-line 1s ease-in-out 1;
 }
 @keyframes blue-line{
